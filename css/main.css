@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/dark-aesthetic-computer-cxzphn9h6y9jjp6o.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Dark color with some transparency */
+    width: 25%;
+    height: 55vh;
+    color: white;
+    /* Text color */
+    border-radius: 10%;
+    position: relative;
+    z-index: 2;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 26, 26, 0.2);
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.input input::placeholder {
+    color: white;
+}
+
+.input button :hover {
+    color: black;
+}
+
+.input button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(86, 84, 84);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#btn i {
+    color: white;
+}
+
+.input input {
+    width: 70%;
+    height: 30px;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px 10px 17px 5px;
+    background-color: rgb(86, 84, 84);
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.list {
+    list-style: none;
+    border-radius: 7px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    max-height: 200px;
+    margin: auto;
+    background-color: white;
+    overflow-y: auto;
+    position: absolute;
+    left: 65px;
+    top: 88px;
+}
+
+.list li {
+    color: black;
+
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.error {
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+.adjust {
+    display: none;
+    flex-direction: column;
+    margin: 0px 20px 10px 40px;
+}
+
+.text h4 {
+    font-size: 30px;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.text h3 {
+    font-size: 35px;
+    margin: 10px;
+
+}
+
+.foot {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px;
+}
+
+.des {
+    display: flex;
+}
+
+.foot p {
+    margin-top: 10px;
+}
+
+.foot i {
+    margin: 10px 10px 10px 0px;
+}
+
+
+/* Media Query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 90%;
+    }
+
+    .list {
+        margin-left: -14px;
+
+    }
+
+    .foot {
+        font-size: 25px;
+    }
+}
